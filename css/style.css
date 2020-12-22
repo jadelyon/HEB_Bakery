@@ -1,0 +1,607 @@
+/* header navigation */
+
+.customNav {
+    position: fixed;
+    width: 100%;
+    background-size: cover;
+    z-index: 10;
+    background-color: #2C698B !important;
+    border-top: 2px dashed white;
+    border-bottom: 2px dashed white; 
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+.navbar-brand img{
+    padding-right: 15px;
+    width: 65px;
+}
+
+.nav-item{
+    margin: 0px 15px;
+}
+
+.customNav a {
+    color: white!important;
+}
+.active-cyan-2 input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #2C698B;
+    box-shadow: 0 1px 0 0 #2C698B;
+    margin-left: auto;
+}
+
+.active-cyan .fa, .active-cyan-2 .fa {
+    color: #2C698B;
+}
+
+#nav-list{
+    margin-right: 0 !important;
+}
+
+.form-inline{
+    margin-right: 0!important;
+    margin-left: auto;
+}
+
+div.outernav {
+    background-color: #2C698B !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.fa-search {
+    color: white !important;
+}
+
+
+/* homepage hero image */
+
+.jumbotron{
+    background-image: url('../images/bakery-hero2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 500px;
+    height: calc(45vh - 25px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 3px lightgrey;
+}
+
+.jumboCopy{
+    width: 70%;
+    min-width: 500px;
+    max-width: 700px;
+    color: white;
+    text-align: center;
+}
+
+
+.jumboCopy h1 {
+    font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    text-decoration: none;
+}
+  
+p { 
+    font-family: 'Open Sans', sans-serif;
+}
+
+.customNav {
+    position: fixed;
+    width: 100%;
+    background-size: cover;
+    z-index: 10;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+.navbar-brand img{
+    padding-right: 15px;
+    width: 65px;
+}
+
+.nav-item{
+    margin: 0px 15px;
+}
+
+.dropdown-menu{
+    background: url('../images/transparency.png');
+    background-color: transparent !important;
+    background-size: cover;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: black;
+    text-decoration: none;
+    background: black;
+}
+
+
+.navCTA{
+    font-size: 15px;
+}
+
+.jumbotron{
+    background-image: url('../images/bakery-hero2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    height: calc(42vh - 25px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumboCopy{
+    width: 70%;
+    min-width: 500px;
+    max-width: 700px;
+    color: white;
+    text-align: center;
+}
+
+div.jumboCopy {
+    padding: 30px;
+    background-color: black;
+    opacity: 0.75;
+}
+
+.content{
+    padding:50px;
+}
+
+.sectionHeading{
+    text-align: center;
+}
+
+.showsNear{
+    padding: 0px 30px 30px 30px;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+    margin-top: 50px;
+} 
+
+.cardContainer {
+    margin-top: 20px;
+}
+
+.card {
+    margin: 0 auto;
+}
+
+.valueProp{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sideAccent{
+    background: #2C698B;
+    width: 15px;
+}
+
+.imageContainer{
+    padding: 50px;
+}
+
+.imageContainer img{
+    width: 100%;
+}
+
+.active-cyan-2 input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #4dd0e1;
+    box-shadow: 0 1px 0 0 #4dd0e1;
+    margin-left: auto;
+ }
+
+.active-cyan .fa, .active-cyan-2 .fa {
+    color: #4dd0e1;
+}
+
+#nav-list{
+    margin-right: 0 !important;
+}
+
+.form-inline{
+    margin-right: 0!important;
+    margin-left: auto;
+}
+
+/* happy holidays hero image */
+
+.holidayHero{
+    background-image: url("../Images/happyholidays2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 500px;
+    height: calc(45vh - 25px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 3px lightgrey;
+    margin-bottom: 3%;
+}
+
+.holidayCopy{
+    width: 70%;
+    min-width: 500px;
+    max-width: 700px;
+    text-align: center;
+    color: white;
+}
+
+.holidayCopy h1 {
+    font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.holidayCopy p {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.holidayCopy button {
+    background-color: red;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 80px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+div.holidayCopy {
+    padding: 30px;
+    background-color: black;
+    opacity: 0.8;
+}
+
+
+/* Breadcrumb navigation */
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: grey;
+    content: "/\00a0"
+}
+
+ul.breadcrumb {
+    background-color: white;
+}
+
+
+
+/* Bakery categories navigation */
+
+hr.line {
+    border-top: 1px dashed lightgrey;
+}
+
+.bakeryNav {
+    text-align: center;
+}
+.bakeryNav img {
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    width: 125px;
+    padding: 12px;
+    box-shadow: 3px 3px 3px lightgrey;
+}
+.bakeryNav h2 {
+    font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 38px;
+    text-decoration: none;
+    padding-bottom: 25px;
+}
+.bakeryNav h4 {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    padding-top: 15px;
+}
+
+ .bakeryNav .row {
+     padding-bottom: 30px;
+}
+
+.bakeryNav a:link {
+    text-decoration: none;
+}
+
+
+/* horizontal scrollable menus */
+
+.birthdayNav {
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.cakeOptions {
+    width: 300px;
+    height: 200px;
+    margin: 5px;
+    background-color: grey;
+}
+
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu li {
+    display: inline-block;
+    float: none;
+}
+
+#cakeselection {
+    width: 300px;
+    height: 200px;
+    margin: 5px;
+    background-color: lightgrey;
+}
+
+
+/* Sign in or create an account */
+
+.account {
+    margin: 10%;
+}
+
+.line2 {
+    border: 1px solid lightgrey;
+    margin: 5%;
+}
+
+.line3 {
+    border: 1px solid lightgrey;
+    height: 325px;
+    position: absolute;
+    left: 50%;
+}
+
+.account button {
+    background-color: red;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.submit {
+    background-color: red;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px;
+    width: 225px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.guest {
+    text-align: center;
+}
+
+.signin {
+    text-align: center;
+}
+
+.forgotPW {
+    float: left;
+    width: 50%;
+}
+
+.remember {
+    float: left;
+    width: 50%;
+}
+
+.inputBox {
+    width: 225px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    margin-bottom: 5px;
+}
+
+/* checkout process */
+
+.checkoutpage1 h2 {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 38px;
+    text-decoration: none;
+}
+
+.checkoutpage2 h2 {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 38px;
+    text-decoration: none;
+}
+
+.checkoutpage3 h2 {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 38px;
+    text-decoration: none;
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    margin-top: 3%;
+    overflow: hidden;
+    color: lightgrey
+}
+#progressbar .active {
+    color: #000000
+}
+#progressbar li {
+    list-style-type: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    width: 30%;
+    float: left;
+    position: relative
+}
+#progressbar #checkoutpickup:before {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    content: "1"
+}
+#progressbar #checkoutpayment:before {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    content: "2"
+}
+#progressbar #checkoutreview:before {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    content: "3"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 18px;
+    color: #FFFFFF;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: red
+}
+
+
+#pickuplocation select {
+    width: 300px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+
+#pickuptimes select {
+    width: 200px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+
+div.pickupsetting {
+    padding: 5px;
+}
+
+
+div.ordersummarycard {
+    background: whitesmoke;
+    box-shadow: 3px 3px 3px lightgrey;
+    border: lightgrey;
+    border-radius: 10px;
+    margin-top: 3%;
+    padding: 25px;
+}
+
+.summaryimg img {
+    width: 150px;
+    position: relative;
+    border: lightgrey;
+    z-index: 1;
+
+}
+
+div.summary {
+    background: whitesmoke;
+    box-shadow: 3px 3px 3px lightgrey;
+    border: lightgrey;
+    border-radius: 10px;
+    margin-top: 3%;
+    padding: 25px;
+}
+
+.summarytotal {
+    font-size: 14px;
+}
+
+.submitbuttons button {
+    background-color: red;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px;
+    width: 225px;
+    text-align: center;
+    font-size: 16px;
+    float: right;
+}
+
+div.paymentdetails {
+    background: whitesmoke;
+    box-shadow: 3px 3px 3px lightgrey;
+    border: lightgrey;
+    border-radius: 10px;
+    margin-top: 3%;
+    padding: 25px;
+}
+
+.container h5 {
+    margin-bottom: 3%;
+}
+
+#dismissconfirmation {
+    background-color: red;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px;
+    width: 225px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+

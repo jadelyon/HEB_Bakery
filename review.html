@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>HEB Bakery - Review Order</title>
+</head>
+<body>
+
+<!-- Navigation bar -->
+
+<div class="outernav">
+  <nav class="navbar navbar-expand-lg navbar-light customNav">
+      <a class="navbar-brand" href="index.html"><img src="images/Logo_of_the_HEB_Grocery_Company,_LP.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline active-cyan-4">
+              <input class="form-control form-control-sm mr-3 w-200" type="text" placeholder="Search"
+                aria-label="Search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+          </form>
+        <ul id='nav-list' class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home Page <span class="sr-only">(current)</span></a>
+            </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="account.html">Login or Register <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Find a Store</a>
+            </li>
+          </li>
+          <a href="cart.html">
+          <i class="fa fa-shopping-cart" style="font-size:30px;color:red"></i></a>
+        </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+<!-- Checkout page 3 -->
+
+      <!-- left column progress bar and review pickup settings and payment details -->
+
+<section class="checkoutpage3">
+    <h2>Review Order</h2>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-7">
+          <div id="progress">
+            <ul id="progressbar">
+              <li class="active" id="checkoutpickup">Pick Up</li>
+              <li class="active" id="checkoutpayment">Payment</li>
+              <li class="active" id="checkoutreview">Review</li>
+          </ul> 
+          </div><br>
+          <div>
+          <h5>Order details:</h5>
+          </div>
+
+          <div class="pickupdropdowns">
+          <div class="pickupsetting">
+            <select id="selectlocation">
+              <option value="0">Pick Up at <strong>Hancock Center H-E-B</strong> on <strong>Jan 9, 10:00AM - 10:30AM</strong></option>
+            </select>
+          </div>
+          </div>
+
+         <div class="ordersummarycard"> 
+          <div class="row">
+            <div class="col summaryimg">
+              <img src="Images/birthday.jpg">
+            </div>
+            <div class="col">
+              <p><strong>Birthday Cake - Coco Theme</strong>
+              <p><i>Customized</i><br>
+              <a href="#">View Details</a><br></p>
+              <!-- add qty radio here -->
+              <strong>$25.93</strong>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <div class="pickupdropdowns">
+            <div class="pickupsetting">
+              <select id="selectpaymentinfo">
+                <option value="0">Credit Card Information</option>
+              </select>
+            </div>
+            </div>
+
+        </div>
+
+        <!-- right column order summary -->
+
+        <div class="col-5">
+          <div class="container summary">
+          <h5>Order Summary</h5><br>
+          <div class="row ordersummary">
+            <div class="col ordersummaryitems">
+              <p>Birthday Cake - Coco Theme</p>
+            </div>
+            <div class="col-md-auto ordersummaryprice">
+              <strong>$25.93</strong>
+            </div>
+          </div><br>
+            <form>
+                <div><label for="promocode"><i>Promo Code / Gift Card</i></label></div>
+                <div class="form-group mb-2">
+                  <input type="text" class="promoinput mb-2" id="promocode" aria-describedby="promohelp" placeholder="Enter 14-Digit Code"> 
+                  <button type="submit" class="btn btn-primary mb-2">Apply</button>
+                </div>
+            </form>
+
+          <br><div class="row summarytotal">
+            <div class="col summarysubtotal">
+              <p>Subtotal</p>
+            </div>
+            <div class="col-md-auto summaryamount">
+              $25.93
+            </div>
+          </div>
+          <div class="row summarytotal">
+            <div class="col summarysubtotal">
+              <p>Tax</p>
+            </div>
+            <div class="col-md-auto summaryamount">
+              $2.07
+            </div>
+          </div>
+          <div class="row summarytotal">
+            <div class="col summarysubtotal">
+              <p>Personal Shopper Fee</p>
+            </div>
+            <div class="col-md-auto summaryamount">
+              $5.00
+            </div>
+          </div>
+          <div class="row summarytotal">
+            <div class="col summarysubtotal">
+              <p>Total</p>
+            </div>
+            <div class="col-md-auto summarytotal">
+              <strong>$33.00</strong>
+            </div>
+          </div>
+          </div>
+
+          <br><br>
+          
+          <div class="submitbuttons">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confirmorder">Confirm Order</button>
+          </div>
+
+              <!-- Modal -->
+
+    <div class="modal fade" id="confirmorder" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h4>Order Confirmation</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>We have received your order and sent you a confirmation email.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="index.html"><button type="button" class="btn btn-secondary" id="dismissconfirmation">Dismiss</button></a>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- end modal -->
+
+        </div>
+        <!-- end right column -->
+        
+          </div>
+        </div>
+
+</section>
+
+
+
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>
