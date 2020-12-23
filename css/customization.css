@@ -45,11 +45,14 @@
     margin-left: auto;
 }
 
-
 div.outernav {
     background-color: #2C698B !important;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.fa-search {
+    color: white !important;
 }
 
 
@@ -257,15 +260,15 @@ select.list-dt:focus {
 }
 #progressbar #cakeicing:before {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    content: "3"
+    content: "4"
 }
 #progressbar #cakemessage:before {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    content: "4"
+    content: "5"
 }
 #progressbar #cakenotes:before {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    content: "5"
+    content: "6"
 }
 #progressbar #cakereview:before {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -321,4 +324,28 @@ select.list-dt:focus {
 .fit-image {
     width: 100%;
     object-fit: cover
+}
+
+
+#msform .cart-button {
+    width: 150px;
+    background: red;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px
+}
+#msform .back-to-home {
+    width: 150px;
+    background: red;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px
 }
