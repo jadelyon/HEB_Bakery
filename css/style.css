@@ -259,7 +259,7 @@ footer {
 }
 
 .holidayCopy button {
-    background-color: red;
+    background-color: #CB3D32;
     border: none;
     border-radius: 25px;
     color: white;
@@ -289,7 +289,7 @@ ul.breadcrumb li+li:before {
 }
 
 ul.breadcrumb {
-    background-color: white;
+    background-color: #f8f8f8;
 }
 
 
@@ -334,16 +334,20 @@ hr.line {
 
 /* horizontal scrollable menus */
 
-.birthdayNav {
-    margin-left: 3%;
-    margin-top: 3%;
+body.birthday {
+    background-color: #f8f8f8;
 }
 
-.cakeOptions {
-    width: 300px;
-    height: 200px;
-    margin: 5px;
-    background-color: grey;
+.birthdayNav h2 {
+    font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 38px;
+    text-decoration: none;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.birthdayNav {
+    margin-left: 3%;
 }
 
 div.scrollmenu {
@@ -356,12 +360,56 @@ div.scrollmenu li {
     float: none;
 }
 
-#cakeselection {
+.addtocartbutton {
+    background-color: #CB3D32;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 3px;
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.customizebutton {
+    background-color: #2C698B;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 3px;
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.cakeOptions {
     width: 300px;
     height: 200px;
     margin: 5px;
-    background-color: lightgrey;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
 }
+
+img.pickacake {
+    height: 200px;
+    padding: 5px;
+    position: relative;
+}
+
+div.cakeoptionscontent {
+    margin-top: 18%;
+}
+
+.cakeoptionscontent p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
 
 
 /* Sign in or create an account */
@@ -383,7 +431,7 @@ div.scrollmenu li {
 }
 
 .account button {
-    background-color: red;
+    background-color: #CB3D32;
     border: none;
     border-radius: 25px;
     color: white;
@@ -395,7 +443,7 @@ div.scrollmenu li {
 }
 
 .submit {
-    background-color: red;
+    background-color: #CB3D32;
     border: none;
     border-radius: 25px;
     color: white;
@@ -520,7 +568,7 @@ div.scrollmenu li {
 }
 #progressbar li.active:before,
 #progressbar li.active:after {
-    background: red
+    background: #CB3D32;
 }
 
 
@@ -572,7 +620,7 @@ div.summary {
 }
 
 .submitbuttons button {
-    background-color: red;
+    background-color: #CB3D32;
     border: none;
     border-radius: 25px;
     color: white;
@@ -597,7 +645,7 @@ div.paymentdetails {
 }
 
 #dismissconfirmation {
-    background-color: red;
+    background-color: #CB3D32;
     border: none;
     border-radius: 25px;
     color: white;
