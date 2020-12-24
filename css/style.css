@@ -26,6 +26,7 @@
 .customNav a {
     color: white!important;
 }
+
 .active-cyan-2 input[type=text]:focus:not([readonly]) {
     border-bottom: 1px solid #2C698B;
     box-shadow: 0 1px 0 0 #2C698B;
@@ -56,7 +57,7 @@ div.outernav {
 /* color and font styling */
 
 body {
-    background-color: #f8f8f8;
+    background-color: #f8f8f8 !important;
 }
 
 h1 {
