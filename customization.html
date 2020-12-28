@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/customization.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <title>HEB Bakery - Customize</title>
 </head>
@@ -43,6 +43,16 @@
     </div>
     </nav>
     </div>
+
+<!-- Breadcrumb navigation -->
+
+<ul class="breadcrumb">
+  <li><a href="index.html">Bakery Home</a></li>
+  <li><a href="cakes.html">Cakes</a></li>
+  <li><a href="occasion.html">Occasion</a></li>
+  <li><a href="birthday.html">Birthday</a></li>
+  <li>Customize</li>
+</ul>
 
 <!-- stepper & customization -->
 
@@ -93,7 +103,9 @@
                 <label for="sheet-cake">
                 <input type="radio" value="sheet-cake"  name="quality" id="sheet-cake"> <span>Sheet Cake</span>
                 </label>
-                </div><input type="button" name="next" class="next cart-button" value="Add to Cart" /><input type="button" name="next" class="next action-button" value="Next Step" />
+                </div>
+                <input type="button" name="next" class="next cart-button" value="Add to Cart" />
+                <input type="button" name="next" class="next action-button" value="Next Step" />
                 </fieldset>
                                                   
                 <fieldset>
@@ -111,9 +123,9 @@
                       <input type="radio" value="12-servings" name="size1" id="12-servings"> <span>12 Servings</span>
                     </label>
                 </div>
-                <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
-                <input type="button" name="next" class="next cart-button" value="Add to Cart" /> 
-                <input type="button" name="next" class="next action-button" value="Next Step" />
+                  <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                  <input type="button" name="next" class="next cart-button" value="Add to Cart" /> 
+                  <input type="button" name="next" class="next action-button" value="Next Step" />
                 </fieldset>
 
                   <fieldset>
@@ -123,8 +135,8 @@
                       <input type="radio" value="vanilla" name="quality" id="vanilla"> <span>Vanilla</span>
                     </label>
                     <br>
-                    <label for="Chocolate">
-                      <input type="radio" value="Chocolate" name="quality" id="Chocolate"> <span>Chocolate</span>
+                    <label for="chocolate">
+                      <input type="radio" value="chocolate" name="quality" id="chocolate"> <span>Chocolate</span>
                     </label>
                     <br>
                        <label for="carrotcake">
@@ -147,7 +159,10 @@
                         <input type="radio" value="germanchocolate"  name="quality" id="germanchocolate"> <span>German Chocolate</span>
                       </label>
                       <br>
-                </div><input type="button" name="previous" class="previous action-button-previous" value="Previous" /><input type="button" name="next" class="next cart-button" value="Add to Cart" /> <input type="button" name="next" class="next action-button" value="Next Step" />
+                </div>
+                  <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                  <input type="button" name="next" class="next cart-button" value="Add to Cart" /> 
+                  <input type="button" name="next" class="next action-button" value="Next Step" />
                   </fieldset>
 
                   <fieldset>
@@ -179,15 +194,20 @@
                           <option>4</option>
                         </select>
                       </div>
- <input type="button" name="previous" class="previous action-button-previous" value="Previous" /><input type="button" name="next" class="next cart-button" value="Add to Cart" /> <input type="button" name="make_payment" class="next action-button" value="Next Step" />
-            </fieldset>
+                  <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                  <input type="button" name="next" class="next cart-button" value="Add to Cart" />
+                  <input type="button" name="make_payment" class="next action-button" value="Next Step" />
+                  </fieldset>
                   <fieldset>
                     <form>
                       <div class="form-group">
                         <label for="exampleFormControlTextarea1">Add a Message</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                       </div>
-                    </form><input type="button" name="previous" class="previous action-button-previous" value="Previous" /><input type="button" name="next" class="next cart-button" value="Add to Cart" /> <input type="button" name="next" class="next action-button" value="Next Step" />
+                    </form>
+                    <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                    <input type="button" name="next" class="next cart-button" value="Add to Cart" />
+                    <input type="button" name="next" class="next action-button" value="Next Step" />
                 </fieldset>
 
                 <fieldset>
@@ -196,8 +216,12 @@
                         <label for="exampleFormControlTextarea1">Add a Note for the Kitchen</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                       </div>
-                    </form><input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="next" class="next cart-button" value="Add to Cart" />
+                    </form>
+                    <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                    <input type="button" name="next" class="next cart-button" value="Add to Cart" />
                 </fieldset>
+
+<!-- Modal -->
 
         </form>
         <div class="modal fade" id="createAccount" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -211,30 +235,30 @@
               </div>
               <div class="modal-body">
                 <div class="form-card">
-                  <h2 class="fs-title text-center">Check out these Frequently Purchased items!</h2> <br><br>
+                  <h3>Check out these Frequently Purchased items!</h3> <br><br>
                   <div class="row justify-content-center">
                     <div class="container">
                       <div class="row">
  
-                        <div class="col-sm add-item">
-                          <img src="../Images/coco-candle.jpg" alt="">
-                          <h3>Plates</h3>
+                        <div class="col-sm add-item" id="addtocart">
+                          <img src="images/paperplates.png" alt="">
+                          <h4>Paper Plates</h4>
                           <p>$6.07</p>
-                          <button type="button" class="btn btn-primary">Add to Cart</button>      
+                          <button type="button" class="btn btn-primary" id="addtocart">Add to Cart</button>      
                         </div>
 
-                        <div class="col-sm add-item">
-                          <img src="../Images/coco-plates.jpg" alt="">
-                          <h3>Plates</h3>
-                          <p>$6.07</p>
-                          <button type="button" class="btn btn-primary">Add to Cart</button>                          
+                        <div class="col-sm add-item" id="addtocart">
+                          <img src="images/birthdaycandles2.png" alt="">
+                          <h4>Cake Candles</h4>
+                          <p>$2.49</p>
+                          <button type="button" class="btn btn-primary" id="addtocart">Add to Cart</button>                          
                         </div>
 
-                        <div class="col-smadd-item">
-                          <img src="../Images/coco_napkins.jpg" alt="">
-                          <h3>Plates</h3>
-                          <p>$6.07</p>
-                          <button type="button" class="btn btn-primary">Add to Cart</button>      
+                        <div class="col-smadd-item" id="addtocart">
+                          <img src="images/balloons.png" alt="">
+                          <h4>Birthday Balloons</h4>
+                          <p>$14.99</p>
+                          <button type="button" class="btn btn-primary" id="addtocart">Add to Cart</button>      
                         </div>
                       </div>
                     </div>
@@ -244,7 +268,8 @@
                       </div>
 
               <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">Back to Home Page</button>
+                <a href="index.html"><button type="button" class="btn btn-primary" id="back-to-home">Back to Bakery Home</button></a>
+                <a href="cart.html"><button type="button" class="btn btn-primary" id="addtocart">Proceed to Cart</button></a>
               </div>
               </div>
           </div>

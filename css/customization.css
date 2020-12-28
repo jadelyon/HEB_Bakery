@@ -63,13 +63,15 @@ body {
 h1 {
     font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 50px;
+    color: black;
     text-decoration: none;
     text-align: center;
 } 
 
 h2 {
-    font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif !important;
     font-size: 38px;
+    color: black !important;
     text-decoration: none;
     text-align: center;
 }
@@ -77,11 +79,29 @@ h2 {
 h4 {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 24px;
+    color: black;
     text-decoration: none;
 }
 
 p { 
     font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+/* Breadcrumb navigation */
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: grey;
+    content: "/\00a0"
+}
+
+ul.breadcrumb {
+    background-color: #f8f8f8;
 }
 
 
@@ -209,7 +229,7 @@ fieldset label{
     margin-top: 2px;
     width: 100%;
     box-sizing: border-box;
-    font-family: montserrat;
+    font-family: 'Open Sans', sans-serif;
     color: #2C3E50;
     font-size: 16px;
     letter-spacing: 1px
@@ -227,15 +247,16 @@ fieldset label{
 }
 
 #msform .action-button {
-    width: 100px;
-    background: #2C698B;
-    font-weight: bold;
+    background-color: #2C698B;
+    border: none;
+    border-radius: 25px;
     color: white;
-    border: 0 none;
-    border-radius: 0px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 5px
+    padding: 3px;
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 #msform .action-button:hover,
@@ -244,15 +265,16 @@ fieldset label{
 }
 
 #msform .action-button-previous {
-    width: 100px;
-    background: #616161;
-    font-weight: bold;
+    background-color: #616161;
+    border: none;
+    border-radius: 25px;
     color: white;
-    border: 0 none;
-    border-radius: 0px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 5px
+    padding: 3px;
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 #msform .action-button-previous:hover,
@@ -279,13 +301,6 @@ select.list-dt:focus {
     position: relative;
 }
 
-.fs-title {
-    font-size: 25px;
-    color: #2C3E50;
-    margin-bottom: 10px;
-    font-weight: bold;
-    text-align: left;
-}
 
 #progressbar {
     margin-bottom: 30px;
@@ -402,32 +417,38 @@ select.list-dt:focus {
 
 
 #msform .cart-button {
-    width: 150px;
-    background:#CB3D32;
-    font-weight: bold;
+    background-color: #CB3D32 !important;
+    border: none;
+    border-radius: 25px;
     color: white;
-    border: 0 none;
-    border-radius: 0px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 5px
+    padding: 3px;
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
+
+
 #msform .back-to-home {
-    width: 150px;
-    background: #CB3D32;
-    font-weight: bold;
+    background-color: #616161 !important;
+    border: none;
+    border-radius: 25px;
     color: white;
-    border: 0 none;
-    border-radius: 0px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 5px
+    padding: 3px;
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 .btn{
     border-radius: 30px !important;
 }
+
+
 
 /* modal */
 
@@ -453,4 +474,67 @@ select.list-dt:focus {
     margin-top: 50px;
 }
 
+}
+
+#addtocart img {
+    height: 200px;
+}
+
+button#addtocart {
+    background-color: #CB3D32 !important;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 3px;
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.modal-footer button#addtocart {
+    background-color: #CB3D32 !important;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px;
+    width: 225px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+button#back-to-home {
+    background-color: #616161 !important;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px;
+    width: 225px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.modal-body h2 {
+    font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    font-size: 38px;
+    color: black !important;
+    text-decoration: none;
+    text-align: center;
+}
+
+#addtocart h4 {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+#addtocart p { 
+    font-family: 'Open Sans', sans-serif;
+    color: black;
 }

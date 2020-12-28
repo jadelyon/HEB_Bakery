@@ -49,28 +49,28 @@
 
       <!-- Main Container -->
       <main>
+        <section class="section my-5 pb-5">
+        <h2>Cart</h2>
         <div class="container">
-          <h2>Cart</h2>
-          <section class="section my-5 pb-5">
             <!-- Shopping Cart table -->
-            <div class="table-responsive">
+            <div class="table-responsive" id="carttable">
               <table class="table product-table">
                 <!-- Table head -->
                 <thead>
                   <tr>
                     <th></th>
-                    <th class="font-weight-bold">
-                      <strong>Product</strong>
+                    <th>
+                      <h5>Product</h5>
                     </th>
                     <th></th>
-                    <th class="font-weight-bold">
-                      <strong>Price</strong>
+                    <th>
+                      <h5>Price</h5>
                     </th>
-                    <th class="font-weight-bold">
-                      <strong>QTY</strong>
+                    <th>
+                      <h5>QTY</h5>
                     </th>
-                    <th class="font-weight-bold">
-                      <strong>Amount</strong>
+                    <th>
+                      <h5>Amount</h5>
                     </th>
                     <th></th>
                   </tr>
@@ -81,15 +81,15 @@
                   <!-- First row -->
                   <tr>
                     <th scope="row">
-                      <img src="Images/birthday.jpg" alt="" class="img-fluid z-depth-0">
+                      <img src="images/cococake.jpg" alt="" class="img-fluid z-depth-0">
                     </th>
                     <td>
                       <h5 class="mt-3">
-                        <strong>Birthday Cake</strong>
+                        <strong>Coco Cake </strong>(customized)
                       </h5>
                     </td>
                     <td></td>
-                    <td>$24.74</td>
+                    <td>$28.46</td>
                     <td class="text-center text-md-left">
                       <span class="qty">1 </span>
                       <div class="btn-group radio-group ml-2" data-toggle="buttons">
@@ -102,7 +102,7 @@
                       </div>
                     </td>
                     <td class="font-weight-bold">
-                      <strong>$24.74</strong>
+                      <strong>$28.46</strong>
                     </td>
                     <td>
                       <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item">X
@@ -113,11 +113,11 @@
                   <!-- Second row -->
                   <tr>
                     <th scope="row">
-                      <img src="Images/pie.jpg" alt="" class="img-fluid z-depth-0">
+                      <img src="images/balloons.png" alt="" class="img-fluid z-depth-0">
                     </th>
                     <td>
                       <h5 class="mt-3">
-                        <strong>Pumpkin Pie</strong>
+                        <strong>Birthday Balloons</strong>
                       </h5>
                     </td>
                     <td></td>
@@ -149,11 +149,11 @@
                     </th>
                     <td>
                       <h5 class="mt-3">
-                        <strong>Candles</strong>
+                        <strong>Birthday Candles</strong>
                       </h5>
                     </td>
                     <td></td>
-                    <td>$1.01</td>
+                    <td>$3.49</td>
                     <td class="text-center text-md-left">
                       <span class="qty">2 </span>
                       <div class="btn-group radio-group ml-2" data-toggle="buttons">
@@ -166,7 +166,7 @@
                       </div>
                     </td>
                     <td class="font-weight-bold">
-                      <strong>$1.01</strong>
+                      <strong>$3.49</strong>
                     </td>
                     <td>
                       <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item">X
@@ -184,12 +184,12 @@
                     </td>
                     <td class="text-right">
                       <h4 class="mt-2">
-                        <strong>$37.93</strong>
+                        <strong>$44.13</strong>
                       </h4>
                     </td>
                     <td colspan="3" class="text-right">
                       <a href="checkout.html">
-                      <button type="button" class="btn btn-primary btn-rounded">Proceed to Checkout
+                      <button type="button" class="btn btn-primary btn-rounded" id="cartcheckoutbutton">Proceed to Checkout
                       </button></a>
                     </td>
                   </tr>

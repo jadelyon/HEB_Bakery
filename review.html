@@ -73,29 +73,58 @@
           </div>
           </div>
 
-         <div class="ordersummarycard"> 
-          <div class="row">
-            <div class="col summaryimg">
-              <img src="Images/birthday.jpg">
-            </div>
-            <div class="col">
-              <p><strong>Birthday Cake - Coco Theme</strong>
-              <p><i>Customized</i><br>
-              <a href="#">View Details</a><br></p>
-              <!-- add qty radio here -->
-              <strong>$25.93</strong>
-            </div>
-          </div>
-        </div>
-        <br>
-
-        <div class="pickupdropdowns">
+          <div class="pickupdropdowns">
             <div class="pickupsetting">
               <select id="selectpaymentinfo">
                 <option value="0">Credit Card Information</option>
               </select>
             </div>
             </div>
+
+         <div class="ordersummarycard"> 
+          <div class="row">
+            <div class="col summaryimg">
+              <img src="images/cococake.jpg">
+            </div>
+            <div class="col">
+              <p><strong>Birthday Cake - Coco Theme</strong>
+              <p><i>Customized</i><br>
+              <a href="#">View Details</a><br></p>
+              <!-- add qty radio here -->
+              <strong>$28.46</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="ordersummarycard"> 
+          <div class="row">
+            <div class="col summaryimg">
+              <img src="images/balloons.png">
+            </div>
+            <div class="col">
+              <p><strong>Birthday Balloons</strong><br><br><br>
+              <a href="#">View Details</a><br></p>
+              <!-- add qty radio here -->
+              <strong>$12.18</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="ordersummarycard"> 
+          <div class="row">
+            <div class="col summaryimg">
+              <img src="Images/birthdaycandles.jpg">
+            </div>
+            <div class="col">
+              <p><strong>Birthday Candles</strong><br><br><br>
+              <a href="#">View Details</a><br></p>
+              <!-- add qty radio here -->
+              <strong>$3.49</strong>
+            </div>
+          </div>
+        </div>
+
+        <br>
 
         </div>
 
@@ -105,18 +134,37 @@
           <div class="container summary">
           <h5>Order Summary</h5><br>
           <div class="row ordersummary">
+
             <div class="col ordersummaryitems">
               <p>Birthday Cake - Coco Theme</p>
             </div>
             <div class="col-md-auto ordersummaryprice">
-              <strong>$25.93</strong>
+              <strong>$28.46</strong>
             </div>
+            <div class="w-100 d-none d-md-block"></div>
+
+            <div class="col ordersummaryitems">
+              <p>Birthday Balloons</p>
+            </div>
+            <div class="col-md-auto ordersummaryprice">
+              <strong>$12.18</strong>
+            </div>
+            <div class="w-100 d-none d-md-block"></div>
+
+            <div class="col ordersummaryitems">
+              <p>Birthday Candles</p>
+            </div>
+            <div class="col-md-auto ordersummaryprice">
+              <strong>$3.49</strong>
+            </div>
+            <div class="w-100 d-none d-md-block"></div>
+
           </div><br>
             <form>
                 <div><label for="promocode"><i>Promo Code / Gift Card</i></label></div>
                 <div class="form-group mb-2">
                   <input type="text" class="promoinput mb-2" id="promocode" aria-describedby="promohelp" placeholder="Enter 14-Digit Code"> 
-                  <button type="submit" class="btn btn-primary mb-2">Apply</button>
+                  <button type="submit" class="btn btn-primary mb-2" id="applypromo">Apply</button>
                 </div>
             </form>
 
@@ -125,7 +173,7 @@
               <p>Subtotal</p>
             </div>
             <div class="col-md-auto summaryamount">
-              $25.93
+              $44.13
             </div>
           </div>
           <div class="row summarytotal">
@@ -133,7 +181,7 @@
               <p>Tax</p>
             </div>
             <div class="col-md-auto summaryamount">
-              $2.07
+              $3.64
             </div>
           </div>
           <div class="row summarytotal">
@@ -149,7 +197,7 @@
               <p>Total</p>
             </div>
             <div class="col-md-auto summarytotal">
-              <strong>$33.00</strong>
+              <strong>$52.77</strong>
             </div>
           </div>
           </div>
@@ -172,6 +220,7 @@
                 </button>
             </div>
             <div class="modal-body">
+                <h4>Thank you!</h4>
                 <p>We have received your order and sent you a confirmation email.</p>
             </div>
             <div class="modal-footer">

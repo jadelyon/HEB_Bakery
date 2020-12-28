@@ -32,9 +32,6 @@
   margin-left: auto;
 }
 
-.active-cyan .fa, .active-cyan-2 .fa {
-  color: #2C698B;
-}
 
 #nav-list{
   margin-right: 0 !important;
@@ -52,18 +49,53 @@ div.outernav {
   padding-bottom: 5px;
 }
 
-/* titles and headers */
+.fa-search {
+  color: white !important;
+}
 
-.container h2 {
+/* color and font styling */
+
+body {
+  background-color: #f8f8f8 !important;
+}
+
+h1 {
+  font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 50px;
+  text-decoration: none;
+  text-align: center;
+} 
+
+h2 {
+  font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 38px;
+  text-decoration: none;
   text-align: center;
   margin-top: 3%;
-  font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 42px;
+  margin-bottom: 3%;
+}
+
+h4 {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 24px;
   text-decoration: none;
+}
+
+p { 
+  font-family: 'Open Sans', sans-serif;
+}
+
+#carttable {
+  background: white;
+  box-shadow: 3px 3px 3px lightgrey;
+  border: lightgrey;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 768px) {
  
+
+
 /* Force table to not be like tables anymore */
   table,
   thead,
@@ -183,7 +215,24 @@ img{
   max-width: auto !important;
 }
 .btn {
-  background-color: red !important;
-  border: red !important;
+  background-color: #CB3D32 !important;
+  border: none !important;
+  border-radius: 25px !important;
+  color: white;
+  padding: 10px 80px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
 }
 
+#cartcheckoutbutton {
+  background-color: #CB3D32 !important;
+  border: none !important;
+  border-radius: 25px !important;
+  color: white;
+  padding: 10px;
+  width: 225px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}

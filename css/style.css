@@ -7,7 +7,7 @@
     z-index: 10;
     background-color: #2C698B !important;
     border-top: 2px dashed white;
-    border-bottom: 2px dashed white; 
+    border-bottom: 2px dashed white;
 }
 
 .navbar-nav{
@@ -48,6 +48,7 @@ div.outernav {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
 
 .fa-search {
     color: white !important;
@@ -299,6 +300,7 @@ ul.breadcrumb {
 .bakeryNav img {
     border: 1px solid lightgrey;
     border-radius: 50%;
+    background-color: white;
     width: 125px;
     padding: 12px;
     box-shadow: 3px 3px 3px lightgrey;
@@ -369,7 +371,7 @@ div.scrollmenu li {
 .cakeOptions {
     width: 300px;
     height: 200px;
-    margin: 5px;
+    margin: 10px;
     background-color: white;
     border-radius: 10px;
     justify-content: center;
@@ -416,7 +418,7 @@ div.cakeoptionscontent {
     border-radius: 25px;
     color: white;
     padding: 10px;
-    width: 250px;
+    width: 225px;
     text-align: center;
     display: inline-block;
     font-size: 16px;
@@ -558,7 +560,7 @@ div.pickupsetting {
 
 
 div.ordersummarycard {
-    background: whitesmoke;
+    background: white;
     box-shadow: 3px 3px 3px lightgrey;
     border: lightgrey;
     border-radius: 10px;
@@ -575,7 +577,7 @@ div.ordersummarycard {
 }
 
 div.summary {
-    background: whitesmoke;
+    background: white;
     box-shadow: 3px 3px 3px lightgrey;
     border: lightgrey;
     border-radius: 10px;
@@ -600,12 +602,26 @@ div.summary {
 }
 
 div.paymentdetails {
-    background: whitesmoke;
+    background: white;
     box-shadow: 3px 3px 3px lightgrey;
     border: lightgrey;
     border-radius: 10px;
     margin-top: 3%;
     padding: 25px;
+}
+
+button#applypromo {
+    background-color: #2C698B;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 5px;
+    margin-left: 12px;
+    margin-top: 2px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
 }
 
 .container h5 {
@@ -624,3 +640,9 @@ div.paymentdetails {
     font-size: 16px;
 }
 
+.modal-body h4 {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+}
