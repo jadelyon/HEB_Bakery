@@ -53,6 +53,59 @@ div.outernav {
     color: white !important;
 }
 
+/* footer navigation */
+
+footer {
+    background-color: #424046;
+    color: white !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.customFooter {
+    position: fixed;
+    width: 100%;
+    background-size: cover;
+    z-index: 10;
+    background-color: #2C698B !important;
+    border-bottom: 2px dashed white;
+}
+
+div.greyfooter {
+    margin-top: 3%;
+}
+
+footer ul {
+   list-style: none; 
+}
+
+footer li {
+    font-size: 12px;
+}
+
+footer a {
+    color: white;
+}
+
+.hebinfo p {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+button#enteremail {
+    background-color: #CB3D32;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 5px;
+    margin-left: 12px;
+    margin-top: 5px;
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+}
+
 
 /* color and font styling */
 

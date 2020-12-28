@@ -55,6 +55,60 @@ div.outernav {
 }
 
 
+/* footer navigation */
+
+footer {
+    background-color: #424046;
+    color: white !important;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 3%;
+}
+
+.customFooter {
+    position: fixed;
+    width: 100%;
+    background-size: cover;
+    z-index: 10;
+    background-color: #2C698B !important;
+    border-bottom: 2px dashed white;
+}
+
+div.greyfooter {
+    margin-top: 3%;
+}
+
+footer ul {
+   list-style: none; 
+}
+
+footer li {
+    font-size: 12px;
+}
+
+footer a {
+    color: white;
+}
+
+.hebinfo p {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+button#enteremail {
+    background-color: #CB3D32;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 5px;
+    margin-left: 12px;
+    margin-top: 5px;
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+}
+
 /* color and font styling */
 
 body {
@@ -93,12 +147,12 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    height: 500px;
-    height: calc(45vh - 25px);
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 3px 3px 3px lightgrey;
+    margin-bottom: 3%;
 }
 
 .jumboCopy{
@@ -109,24 +163,15 @@ p {
     text-align: center;
 }
 
-.customNav {
-    position: fixed;
-    width: 100%;
-    background-size: cover;
-    z-index: 10;
+.jumboCopy h1 {
+    font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    text-decoration: none;
 }
 
-.navbar-nav{
-    margin-left: auto;
-}
-
-.navbar-brand img{
-    padding-right: 15px;
-    width: 65px;
-}
-
-.nav-item{
-    margin: 0px 15px;
+.jumboCopy p {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
 }
 
 .dropdown-menu{
@@ -142,62 +187,14 @@ p {
 }
 
 
-.navCTA{
-    font-size: 15px;
-}
-
-
 div.jumboCopy {
     padding: 30px;
     background-color: black;
-    opacity: 0.75;
+    opacity: 0.85;
 }
 
 .content{
     padding:50px;
-}
-
-.sectionHeading{
-    text-align: center;
-}
-
-.showsNear{
-    padding: 0px 30px 30px 30px;
-}
-
-footer {
-    position: absolute;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    background-color: #f5f5f5;
-    margin-top: 50px;
-} 
-
-.cardContainer {
-    margin-top: 20px;
-}
-
-.card {
-    margin: 0 auto;
-}
-
-.valueProp{
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.sideAccent{
-    background: #2C698B;
-    width: 15px;
-}
-
-.imageContainer{
-    padding: 50px;
-}
-
-.imageContainer img{
-    width: 100%;
 }
 
 .active-cyan-2 input[type=text]:focus:not([readonly]) {
@@ -227,8 +224,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    height: 500px;
-    height: calc(45vh - 25px);
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -269,7 +265,7 @@ footer {
 div.holidayCopy {
     padding: 30px;
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.85;
 }
 
 
