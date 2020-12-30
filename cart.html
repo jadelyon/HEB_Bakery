@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>HEB Bakery - Cart</title>
 </head>
 <body>
@@ -24,8 +25,9 @@
           <form class="form-inline active-cyan-4">
               <input class="form-control form-control-sm mr-3 w-200" type="text" placeholder="Search"
                 aria-label="Search">
-                <i class="fa fa-search" aria-hidden="true"></i>
+                
           </form>
+          <i class="fa fa-search" aria-hidden="true"></i>
         <ul id='nav-list' class="navbar-nav mr-auto">
           <li class="nav-item active">
               <a class="nav-link" href="index.html">Bakery Home <span class="sr-only">(current)</span></a>
@@ -51,9 +53,9 @@
       <main>
         <section class="section my-5 pb-5">
         <h2>Cart</h2>
-        <div class="container">
+        <div class="container" id="carttable">
             <!-- Shopping Cart table -->
-            <div class="table-responsive" id="carttable">
+            <div class="table-responsive">
               <table class="table product-table">
                 <!-- Table head -->
                 <thead>
@@ -198,15 +200,14 @@
                 <!-- /.Table body -->
               </table>
             </div>
+            </div>
             <!-- Shopping Cart table -->
           </section>
-        </div>
-      </div>
-    </div>
         <!-- /Main Container -->
       </main>
       <!--Main Layout-->
       <!-- End customization -->
+
 
 <!-- This is the footer navigation  -->
 
@@ -316,6 +317,20 @@
                   <li><a href="#">Refund Policy</a></li>
                   <li><a href="#">Product Recalls</a></li>
                 </ul>
+                <ul>
+                  <strong>Find Us</strong><br>
+                  <li>
+                    <a href="#" class="fa fa-facebook" id="socialmedialinks"> </a>
+                    <a href="#" class="fa fa-twitter" id="socialmedialinks"> </a>
+                    <a href="#" class="fa fa-pinterest" id="socialmedialinks"> </a>
+                    <a href="#" class="fa fa-instagram" id="socialmedialinks"> </a>
+                    <a href="#" class="fa fa-youtube" id="socialmedialinks"> </a>
+                  </li>
+                  <li>
+
+                  </li>
+                </ul>
+                
               </div>
 
             </div>
@@ -335,7 +350,9 @@
       </div>
 
     </div>
+
 </footer>
+
 
 </body>
 </html>

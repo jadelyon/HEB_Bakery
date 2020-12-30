@@ -16,7 +16,7 @@
 
 .navbar-brand img{
     padding-right: 15px;
-    width: 65px;
+    width: 120px;
 }
 
 .nav-item{
@@ -72,6 +72,7 @@ footer {
 
 div.greyfooter {
     margin-top: 3%;
+    background-color: #424046;
 }
 
 footer ul {
@@ -99,11 +100,15 @@ button#enteremail {
     color: white;
     padding: 5px;
     margin-left: 12px;
-    margin-top: 5px;
+    margin-top: 7px;
     width: 50px;
     text-align: center;
     display: inline-block;
     font-size: 14px;
+}
+
+input.promoinput.mb-2 {
+    width: 177px !important;
 }
 
 

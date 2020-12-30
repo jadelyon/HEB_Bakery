@@ -16,7 +16,7 @@
 
 .navbar-brand img{
   padding-right: 15px;
-  width: 65px;
+  width: 120px;
 }
 
 .nav-item{
@@ -53,48 +53,6 @@ div.outernav {
   color: white !important;
 }
 
-/* color and font styling */
-
-body {
-  background-color: #f8f8f8 !important;
-}
-
-h1 {
-  font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 50px;
-  text-decoration: none;
-  text-align: center;
-} 
-
-h2 {
-  font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 38px;
-  text-decoration: none;
-  text-align: center;
-  margin-top: 3%;
-  margin-bottom: 3%;
-}
-
-h4 {
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 24px;
-  text-decoration: none;
-}
-
-p { 
-  font-family: 'Open Sans', sans-serif;
-}
-
-#carttable {
-  background: white;
-  box-shadow: 3px 3px 3px lightgrey;
-  border: lightgrey;
-  border-radius: 10px;
-}
-
-@media only screen and (max-width: 768px) {
- 
-
 /* footer navigation */
 
 footer {
@@ -113,6 +71,7 @@ footer {
 }
 
 div.greyfooter {
+  background-color: #424046 !important;
   margin-top: 3%;
 }
 
@@ -147,6 +106,49 @@ button#enteremail {
   display: inline-block;
   font-size: 14px;
 }
+
+
+/* color and font styling */
+
+body {
+  background-color: #f8f8f8 !important;
+}
+
+h1 {
+  font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 50px;
+  text-decoration: none;
+  text-align: center;
+} 
+
+h2 {
+  font-family: 'Lora', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 38px;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 3%;
+  padding-bottom: 20px;
+}
+
+h4 {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+p { 
+  font-family: 'Open Sans', sans-serif;
+}
+
+#carttable {
+  background: white;
+  box-shadow: 3px 3px 3px lightgrey;
+  border: lightgrey;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+ 
 
 
 /* Force table to not be like tables anymore */
