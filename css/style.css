@@ -14,9 +14,17 @@
     margin-left: auto;
 }
 
+.navbar-nav li {
+    font-weight: 600;
+}
+
 .navbar-brand img{
-    padding-right: 15px;
-    width: 120px;
+    padding-right: 15px; 
+    height: 35px;
+}
+
+.cartimg img {
+    height: 40px;
 }
 
 .nav-item{
@@ -33,7 +41,6 @@
     margin-left: auto;
 }
 
-
 #nav-list{
     margin-right: 0 !important;
 }
@@ -48,7 +55,6 @@ div.outernav {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
 
 .fa-search {
     color: white !important;
@@ -85,6 +91,19 @@ footer li {
     font-size: 12px;
 }
 
+#socialmedialinks {
+    font-size: 20px !important;
+    text-align: center;
+    margin-left: 7px;
+}
+
+#appicons {
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 footer a {
     color: white;
 }
@@ -107,6 +126,22 @@ button#enteremail {
     text-align: center;
     display: inline-block;
     font-size: 14px;
+}
+
+/* Breadcrumb navigation */
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: grey;
+    content: "/\00a0"
+}
+
+ul.breadcrumb {
+    background-color: #f8f8f8;
 }
 
 /* color and font styling */
@@ -133,6 +168,13 @@ h4 {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 24px;
     text-decoration: none;
+}
+
+h5 {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 p { 
@@ -267,24 +309,6 @@ div.holidayCopy {
     background-color: black;
     opacity: 0.85;
 }
-
-
-/* Breadcrumb navigation */
-
-ul.breadcrumb li {
-    display: inline;
-}
-
-ul.breadcrumb li+li:before {
-    padding: 8px;
-    color: grey;
-    content: "/\00a0"
-}
-
-ul.breadcrumb {
-    background-color: #f8f8f8;
-}
-
 
 
 /* Bakery categories navigation */

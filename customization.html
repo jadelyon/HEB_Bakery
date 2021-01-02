@@ -12,38 +12,37 @@
 </head>
 <body>
 
-<!-- This is the header navigation -->
+<!-- Navigation bar -->
 
 <div class="outernav">
-<nav class="navbar navbar-expand-lg navbar-light customNav">
-    <a class="navbar-brand" href="#"><img src="images/heblogo.png"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-light customNav">
+    <a class="navbar-brand" href="index.html"><img src="images/heblogo.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="form-inline active-cyan-4">
-            <input class="form-control form-control-sm mr-3 w-200" type="text" placeholder="Search"
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline active-cyan-4">
+              <input class="form-control form-control-sm mr-3 w-200" type="text" placeholder="Search"
                 aria-label="Search">
                 <i class="fa fa-search" aria-hidden="true"></i>
-        </form>
+          </form>
         <ul id='nav-list' class="navbar-nav mr-auto">
-        <li class="nav-item active">
-            <a class="nav-link" href="index.html">Bakery Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item active">
+              <a class="nav-link" href="index.html">Bakery Home <span class="sr-only">(current)</span></a>
             </li>
-        <li class="nav-item active">
+          <li class="nav-item active">
             <a class="nav-link" href="account.html">Login or Register <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Find a Store</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Find a Store</a>
             </li>
-        </li>
-        <a href="cart.html">
-        <i class="fa fa-shopping-cart" style="font-size:30px;color:#CB3D32"></i></a>
+          <li class="cartimg">
+          <a href="cart.html"><img src="images/hebcart.png"></a>
         </li>
         </ul>
-    </div>
+      </div>
     </nav>
-    </div>
+</div>
 
 <!-- Breadcrumb navigation -->
 
@@ -236,28 +235,28 @@
               </div>
               <div class="modal-body">
                 <div class="form-card">
-                  <h3>Check out these Frequently Purchased items!</h3> <br><br>
+                  <h4>Check out these Frequently Purchased items!</h4> <br><br>
                   <div class="row justify-content-center">
                     <div class="container">
                       <div class="row">
  
                         <div class="col-sm add-item" id="addtocart">
                           <img src="images/paperplates.png" alt="">
-                          <h4>Paper Plates</h4>
+                          <h5>Paper Plates</h5>
                           <p>$6.07</p>
                           <button type="button" class="btn btn-primary" id="addtocart">Add to Cart</button>      
                         </div>
 
                         <div class="col-sm add-item" id="addtocart">
                           <img src="Images/birthdaycandles2.png" alt="">
-                          <h4>Cake Candles</h4>
+                          <h5>Cake Candles</h5>
                           <p>$2.49</p>
                           <button type="button" class="btn btn-primary" id="addtocart">Add to Cart</button>                          
                         </div>
 
                         <div class="col-smadd-item" id="addtocart">
-                          <img src="Images/balloons.png" alt="">
-                          <h4>Birthday Balloons</h4>
+                          <img src="images/birthdayballoons.png" alt="">
+                          <h5>Birthday Balloons</h5>
                           <p>$14.99</p>
                           <button type="button" class="btn btn-primary" id="addtocart">Add to Cart</button>      
                         </div>
@@ -296,7 +295,7 @@
           </div>
           <div class="col">
             <div class="form-group mb-2">
-              <input type="text" class="promoinput mb-2" id="enteremail" aria-describedby="promohelp" placeholder="Email address"> 
+              <input type="text" class="promoinput mb-2" id="promocode" aria-describedby="promohelp" placeholder="Email address"> 
               <button type="submit" class="btn btn-primary mb-2" id="enteremail">GO</button>
             </div>
           </div>
@@ -306,11 +305,7 @@
     </div>
 
     <div class="container greyfooter">
-      <div class="row row-cols-2">
-
-        <div class="col">
-          <div class="container" id="bakerynavlinks">
-            <div class="row row-cols-2">
+      <div class="row row-cols-5">
 
               <div class="col">
                 <ul>
@@ -355,14 +350,6 @@
                 </ul>
               </div>
 
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="container" id="companylinks">
-            <div class="row row-cols-2">
-
               <div class="col">
                 <ul>
                   <a href="#"><strong>Company</strong></a>
@@ -389,26 +376,20 @@
                   <li><a href="#">Refund Policy</a></li>
                   <li><a href="#">Product Recalls</a></li>
                 </ul>
-                <ul>
-                  <strong>Find Us</strong><br>
-                  <li>
-                    <a href="#" class="fa fa-facebook" id="socialmedialinks"> </a>
-                    <a href="#" class="fa fa-twitter" id="socialmedialinks"> </a>
-                    <a href="#" class="fa fa-pinterest" id="socialmedialinks"> </a>
-                    <a href="#" class="fa fa-instagram" id="socialmedialinks"> </a>
-                    <a href="#" class="fa fa-youtube" id="socialmedialinks"> </a>
-                  </li>
-                  <li>
-
-                  </li>
-                </ul>
               </div>
 
-            </div>
-          </div>
+              <div class="col" class="finduslinks">
+                <a href="#" class="fa fa-facebook" id="socialmedialinks">&nbsp;</a>
+                <a href="#" class="fa fa-twitter" id="socialmedialinks">&nbsp;</a>
+                <a href="#" class="fa fa-pinterest" id="socialmedialinks">&nbsp;</a>
+                <a href="#" class="fa fa-instagram" id="socialmedialinks">&nbsp;</a>
+                <a href="#" class="fa fa-youtube" id="socialmedialinks">&nbsp;</a><br><br>
+                <img src="images/googleplay.png" id="appicons">
+                <img src="images/appstore.png" id="appicons">
+                <img src="images/entrustseal.png" id="appicons">
+              </div>
+
         </div>
-
-
       </div>
 
       <div class="hebinfo">
@@ -421,6 +402,7 @@
       </div>
 
     </div>
+
 </footer>
 
 <script src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
