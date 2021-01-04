@@ -113,6 +113,7 @@ footer a {
     text-align: center;
     color: white;
     font-size: 12px;
+    font-weight: 600;
 }
 
 button#enteremail {
@@ -416,6 +417,14 @@ div.cakeoptionscontent {
 
 /* Product page content */
 
+.producttitle {
+    margin-left: 3%;
+}
+
+.productdetails {
+    margin-top: 2%;
+}
+
 .productimg h4 {
     margin-top: 3%;
     margin-bottom: 3%;
@@ -431,7 +440,6 @@ div.productinfo {
     box-shadow: 3px 3px 3px lightgrey;
     border: lightgrey;
     border-radius: 10px;
-    margin-top: 3%;
     padding: 25px;
 }
 
@@ -440,12 +448,11 @@ div.productsummary {
     box-shadow: 3px 3px 3px lightgrey;
     border: lightgrey;
     border-radius: 10px;
-    margin-top: 3%;
     padding: 25px;
     text-align: center;
 }
 
-.productsummary button {
+#productaddtocart {
     background-color: #CB3D32;
     border: none;
     border-radius: 25px;
@@ -458,6 +465,18 @@ div.productsummary {
     float: center;
 }
 
+#productaddtolist {
+    background-color: #2C698B;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+    float: center;
+}
 
 /* Sign in or create an account */
 
@@ -623,7 +642,6 @@ div.pickupsetting {
     padding: 5px;
 }
 
-
 div.ordersummarycard {
     background: white;
     box-shadow: 3px 3px 3px lightgrey;
@@ -681,12 +699,17 @@ button#applypromo {
     border-radius: 25px;
     color: white;
     padding: 5px;
-    margin-left: 12px;
-    margin-top: 2px;
+    margin-left: 5px;
+    margin-top: 5px;
     width: 100px;
     text-align: center;
     display: inline-block;
     font-size: 14px;
+}
+
+#promocode {
+    display: inline-block;
+    width: auto;
 }
 
 .container h5 {
