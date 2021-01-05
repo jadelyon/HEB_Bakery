@@ -22,10 +22,12 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <form class="form-inline active-cyan-4">
-              <input class="form-control form-control-sm mr-3 w-200" type="text" placeholder="Search"
+          <form class="form-inline active-cyan-4" autocomplete="off" action="/action_page.php">
+            <div class="autocomplete">
+              <input class="form-control form-control-sm mr-3 w-200" id="searchinput" type="text" name="searchautofill" placeholder="Search"
                 aria-label="Search">
-                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+               <a href="product.html"><i class="fa fa-search" aria-hidden="true"></i></a>
           </form>
         <ul id='nav-list' class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -230,6 +232,7 @@
 
 </footer>
 
+<script src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
 <script src="js/index.js"></script>
 
 </body>

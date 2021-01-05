@@ -44,6 +44,7 @@
     </nav>
 </div>
 
+
 <!-- Breadcrumb navigation -->
 
 <ul class="breadcrumb">
@@ -54,10 +55,12 @@
   <li>Customize</li>
 </ul>
 
+
+
 <!-- stepper & customization -->
 
-<div class="row">
-    <div class="col-md-12 mx-0">
+<div class="rightCustomization">
+  <div class="col-md-12 mx-0">
         <form id="msform">
             
             <!-- progressbar -->
@@ -68,68 +71,75 @@
                 <li id="cakeicing">Icing</li>
                 <li id="cakemessage">Message</li>
                 <li id="cakenotes">Notes</li>
+                <li id="review">Review</li>
             </ul> 
+
+            <!--Image -->
+
+        <div class="containerGrid">
+          <div class="leftCustomization">
+
+        <div class="view cake-image z-depth-1">
+          <img src="images/cococake.jpg" class="img-fluid" alt="sample image">
+          <div class="mask rgba-white-light">
+          </div>                    
+        </div>
+        </div>
+                  
             <!-- fieldsets -->
             <fieldset>
                 <section class="section pt-2">
                     
                 <!-- Grid row -->
-                    <div class="row">
+                    <div class="row row-section">
+                      
+
                 <!--Grid column-->
-                <div class="col-lg-8 col-md-12 pb-lg-5 mb-4">
-                <!--Image -->
-                    <div class="view cake-image z-depth-1">
-                        <img src="images/customizecoco.png" class="img-fluid" alt="sample image">
-                        <div class="mask rgba-white-light">
-                        </div>                    
-                     </div>
-                </div>
-                <!--Grid column-->
-                        <div class="col-lg-4 col-md-12 mb-4">
+
                 <!-- Section: Categories -->
-                <section class="section">
+                <section class="section customizationFiels">
                 
                 <fieldset>
-                  <div class="cakeshape">
-                  <h2>Cake Shape</h2> 
-                  <label for="round-cake">
-                    <input type="radio" value="round-cake" name="quality" id="round-cake"> <span>Round Cake</span>
-                  </label>
-                  <br>
-                  <label for="squared-cake">
-                    <input type="radio" value="squared-cake" name="quality" id="squared-cake"> <span>Squared Cake</span>
-                  </label>
-                  <br>
-                  <label for="sheet-cake">
-                    <input type="radio" value="sheet-cake"  name="quality" id="sheet-cake"> <span>Sheet Cake</span>
-                  </label>
-                  </div>
-                  <input type="button" name="next" class="next cart-button" data-toggle="modal" data-target="#frequentitems" value="Add to Cart" />
-                  <input type="button" name="next" class="next action-button" value="Next &raquo;" />
+                <div class="cakeshape">
+                <h2>Cake Shape</h2> 
+                <label for="round-cake">
+                <input type="radio" value="round-cake" name="quality" id="round-cake"> <span>Round Cake</span>
+                </label>
+                <br>
+                <label for="squared-cake">
+                <input type="radio" value="squared-cake" name="quality" id="squared-cake"> <span>Squared Cake</span>
+                </label>
+                <br>
+                <label for="sheet-cake">
+                <input type="radio" value="sheet-cake"  name="quality" id="sheet-cake"> <span>Sheet Cake</span>
+                </label>
+                </div>
+                <input type="button" name="next" class="next cart-button" data-toggle="modal" data-target="#frequentitems" value="Add to Cart" />
+                <input type="button" name="next" class="next action-button" value="Next Step" />
                 </fieldset>
                                                   
                 <fieldset>
-                  <div class="cakesize">
-                      <h2>Cake Size</h2> 
-                      <label for="48-servings">
-                        <input type="radio" value="48-servings" name="size1" id="48-servings"> <span>48 Servings - 12 inch <i>(+ $14.43)</i></span>
-                      </label>
+                <div class="cakesize">
+                    <h2>Cake Size</h2> 
+                    <label for="48-servings">
+                      <input type="radio" value="48-servings" name="size1" id="48-servings"> <span>48 Servings</span>
+                    </label>
+                  <br>
+                    <label for="16-servings">
+                      <input type="radio" value="16-servings" name="size1" id="16-servings"> <span>16 Servings</span>
+                    </label>
                     <br>
-                      <label for="16-servings">
-                        <input type="radio" value="16-servings" name="size1" id="16-servings"> <span>16 Servings - 8 inch <i>(+ $7.00)</i></span>
-                      </label>
-                      <br>
-                        <label for="12-servings">
-                        <input type="radio" value="12-servings" name="size1" id="12-servings"> <span>12 Servings - 6 inch</span>
-                      </label>
-                  </div>
-
-                    <input type="button" name="previous" class="previous action-button-previous" value="&laquo; Back" />
-                    <input type="button" name="next" class="next cart-button" data-toggle="modal" data-target="#frequentitems" value="Add to Cart" /> 
-                    <input type="button" name="next" class="next action-button" value="Next &raquo;" />
+                       <label for="12-servings">
+                      <input type="radio" value="12-servings" name="size1" id="12-servings"> <span>12 Servings</span>
+                    </label>
+                </div>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                <input type="button" name="next" class="next cart-button" data-toggle="modal" data-target="#frequentitems"  value="Add to Cart" /> 
+                <input type="button" name="next" class="next action-button" value="Next Step" />
                 </fieldset>
 
-                <fieldset>
+                  <fieldset>                   
+                  <h2>Cake Flavor</h2>
                   <div class="containerGrid flavor">
                     <div class="leftflavors"> 
                     <label for="Chocolate">
@@ -176,308 +186,304 @@
                     </div>                               
                   </div>
 
-                <input type="button" name="previous" class="previous action-button-previous" value="&laquo; Back" />
-                <input type="button" name="next" class="next cart-button" data-toggle="modal" data-target="#frequentitems" value="Add to Cart" /> 
-                <input type="button" name="next" class="next action-button" value="Next &raquo;" />
-                </fieldset>
-
-                <fieldset>
-                  <div class="icing">
-                  <h2>Buttercream Icing</h2>
-                  <br>
-                  <h3>Base</h3>
-
-                  <div class="container">
-                  <div id="icingbase">
-                  <label for="lightBase">
-                    <input type="radio" value="lightBase"  name="quality" id="lightBase"> <span>Light</span>
-                  </label>
-                  <label for="regularBase">
-                    <input type="radio" value="regularBase"  name="quality" id="regularBase"> <span>Regular</span>
-                  </label>                     
-                  <label for="heavyBase">
-                    <input type="radio" value="heavyBase"  name="quality" id="heavyBase"> <span>Heavy</span>
-                  </label>
-                </div>
-                    <div class="row">
-                      <div class="custom-radio-button">
-                        <div>
-                          <input type="radio" id="color-pink" name="color" value="color-pink">
-                          <label for="color-pink">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-red" name="color" value="color-red" checked>
-                          <label for="color-red">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-orange" name="color" value="color-orange">
-                          <label for="color-orange">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-yellow" name="color" value="color-yellow">
-                          <label for="color-yellow">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-green" name="color" value="color-green">
-                          <label for="color-green">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-lightBlue" name="color" value="color-lightBlue">
-                          <label for="color-lightBlue">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-blue" name="color" value="color-blue">
-                          <label for="color-blue">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-purple" name="color" value="color-purple">
-                          <label for="color-purple">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-cream" name="color" value="color-cream">
-                          <label for="color-cream">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-black" name="color" value="color-black">
-                          <label for="color-black">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-white" name="color" value="color-white">
-                          <label for="color-white">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <br>
-                  <h3>Top Border</h3>
-                  <div class="container">
-                    <div id="icingtop">
-                      <label for="lighttop">
-                        <input type="radio" value="lighttop"  name="quality" id="lighttop"> <span>Beads</span>
-                      </label>
-                      <label for="regulartop">
-                        <input type="radio" value="regulartop"  name="quality" id="regulartop"> <span>Shells</span>
-                      </label>                     
-                      <label for="heavytop">
-                        <input type="radio" value="heavytop"  name="quality" id="heavytop"> <span>None</span>
-                      </label>
-                    </div>                   
-                      
-                      <div class="icingtop-buttons">
-                        <div>
-                          <input type="radio" id="color-pink-top" name="color" value="color-pink-top">
-                          <label for="color-pink-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-red-top" name="color" value="color-red-top" checked>
-                          <label for="color-red-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-orange-top" name="color" value="color-orange-top">
-                          <label for="color-orange-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-yellow-top" name="color" value="color-yellow-top">
-                          <label for="color-yellow-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-green-top" name="color" value="color-green-top">
-                          <label for="color-green-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-lightBlue-top" name="color" value="color-lightBlue-top">
-                          <label for="color-lightBlue-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-blue-top" name="color" value="color-blue-top">
-                          <label for="color-blue-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-purple-top" name="color" value="color-purple-top">
-                          <label for="color-purple-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-cream-top" name="color" value="color-cream-top">
-                          <label for="color-cream-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-black-top" name="color" value="color-black-top">
-                          <label for="color-black-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-white-top" name="color" value="color-white-top">
-                          <label for="color-white-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  <br>
-                  <h3>Bottom Border</h3>
-                  <div class="container">
-                    <div id="icingbottom">
-                      <label for="lightbottom">
-                        <input type="radio" value="lightbottom"  name="quality" id="lightbottom"> <span>Beads</span>
-                      </label>
-                      <label for="regularbottom">
-                        <input type="radio" value="regularbottom"  name="quality" id="regularbottom"> <span>Shells</span>
-                      </label>                     
-                      <label for="heavybottom">
-                        <input type="radio" value="heavybottom"  name="quality" id="heavybottom"> <span>None</span>
-                      </label>
-                    </div>
-                       <div class="icingtop-buttons">
-                        <div>
-                          <input type="radio" id="color-pink-top" name="color" value="color-pink-top">
-                          <label for="color-pink-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-red-top" name="color" value="color-red-top" checked>
-                          <label for="color-red-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-orange-top" name="color" value="color-orange-top">
-                          <label for="color-orange-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-yellow-top" name="color" value="color-yellow-top">
-                          <label for="color-yellow-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-green-top" name="color" value="color-green-top">
-                          <label for="color-green-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-lightBlue-top" name="color" value="color-lightBlue-top">
-                          <label for="color-lightBlue-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-blue-top" name="color" value="color-blue-top">
-                          <label for="color-blue-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-purple-top" name="color" value="color-purple-top">
-                          <label for="color-purple-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-cream-top" name="color" value="color-cream-top">
-                          <label for="color-cream-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-black-top" name="color" value="color-black-top">
-                          <label for="color-black-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                        <div>
-                          <input type="radio" id="color-white-top" name="color" value="color-white-top">
-                          <label for="color-white-top">
-                            <span>
-                            </span>
-                          </label>
-                        </div>
-                      </div>
-
-                    </div>
-
-                  </div>
-                  <input type="button" name="previous" class="previous action-button-previous" value="&laquo; Back" />
-                  <input type="button" name="next" class="next cart-button" data-toggle="modal" data-target="#frequentitems" value="Add to Cart" />
-                  <input type="button" name="make_payment" class="next action-button" value="Next &raquo;" />
+                  <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                  <input type="button" name="next" class="next cart-button" data-toggle="modal" data-target="#frequentitems" value="Add to Cart" /> 
+                  <input type="button" name="next" class="next action-button" value="Next Step" />
                   </fieldset>
+
+                  <fieldset>
+                    <div class="icing">
+                    <h2>Buttercream Icing</h2>
+                    <br>
+                    <h3>Base</h3>
+                    <div class="container">
+                    <div id="icingbase">
+                    <label for="lightBase">
+                      <input type="radio" value="lightBase"  name="quality" id="lightBase"> <span>Light</span>
+                    </label>
+                    <label for="regularBase">
+                      <input type="radio" value="regularBase"  name="quality" id="regularBase"> <span>Regular</span>
+                    </label>                     
+                    <label for="heavyBase">
+                      <input type="radio" value="heavyBase"  name="quality" id="heavyBase"> <span>Heavy</span>
+                    </label>
+                  </div>
+                      <div class="row">
+                        <div class="custom-radio-button">
+                          <div>
+                            <input type="radio" id="color-pink" name="color" value="color-pink">
+                            <label for="color-pink">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-red" name="color" value="color-red" checked>
+                            <label for="color-red">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-orange" name="color" value="color-orange">
+                            <label for="color-orange">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-yellow" name="color" value="color-yellow">
+                            <label for="color-yellow">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-green" name="color" value="color-green">
+                            <label for="color-green">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-lightBlue" name="color" value="color-lightBlue">
+                            <label for="color-lightBlue">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-blue" name="color" value="color-blue">
+                            <label for="color-blue">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-purple" name="color" value="color-purple">
+                            <label for="color-purple">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-cream" name="color" value="color-cream">
+                            <label for="color-cream">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-black" name="color" value="color-black">
+                            <label for="color-black">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-white" name="color" value="color-white">
+                            <label for="color-white">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <br>
+                    <h3>Top Border</h3>
+                    <div class="container">
+                      <div id="icingtop">
+                        <label for="lighttop">
+                          <input type="radio" value="lighttop"  name="quality" id="lighttop"> <span>Beads</span>
+                        </label>
+                        <label for="regulartop">
+                          <input type="radio" value="regulartop"  name="quality" id="regulartop"> <span>Shells</span>
+                        </label>                     
+                        <label for="heavytop">
+                          <input type="radio" value="heavytop"  name="quality" id="heavytop"> <span>None</span>
+                        </label>
+                      </div>                   
+                        
+                        <div class="icingtop-buttons">
+                          <div>
+                            <input type="radio" id="color-pink-top" name="color" value="color-pink-top">
+                            <label for="color-pink-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-red-top" name="color" value="color-red-top" checked>
+                            <label for="color-red-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-orange-top" name="color" value="color-orange-top">
+                            <label for="color-orange-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-yellow-top" name="color" value="color-yellow-top">
+                            <label for="color-yellow-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-green-top" name="color" value="color-green-top">
+                            <label for="color-green-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-lightBlue-top" name="color" value="color-lightBlue-top">
+                            <label for="color-lightBlue-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-blue-top" name="color" value="color-blue-top">
+                            <label for="color-blue-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-purple-top" name="color" value="color-purple-top">
+                            <label for="color-purple-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-cream-top" name="color" value="color-cream-top">
+                            <label for="color-cream-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-black-top" name="color" value="color-black-top">
+                            <label for="color-black-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-white-top" name="color" value="color-white-top">
+                            <label for="color-white-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    <br>
+                    <h3>Bottom Border</h3>
+                    <div class="container">
+                      <div id="icingbottom">
+                        <label for="lightbottom">
+                          <input type="radio" value="lightbottom"  name="quality" id="lightbottom"> <span>Beads</span>
+                        </label>
+                        <label for="regularbottom">
+                          <input type="radio" value="regularbottom"  name="quality" id="regularbottom"> <span>Shells</span>
+                        </label>                     
+                        <label for="heavybottom">
+                          <input type="radio" value="heavybottom"  name="quality" id="heavybottom"> <span>None</span>
+                        </label>
+                      </div>
+                         <div class="icingtop-buttons">
+                          <div>
+                            <input type="radio" id="color-pink-top" name="color" value="color-pink-top">
+                            <label for="color-pink-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-red-top" name="color" value="color-red-top" checked>
+                            <label for="color-red-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-orange-top" name="color" value="color-orange-top">
+                            <label for="color-orange-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-yellow-top" name="color" value="color-yellow-top">
+                            <label for="color-yellow-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-green-top" name="color" value="color-green-top">
+                            <label for="color-green-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-lightBlue-top" name="color" value="color-lightBlue-top">
+                            <label for="color-lightBlue-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-blue-top" name="color" value="color-blue-top">
+                            <label for="color-blue-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-purple-top" name="color" value="color-purple-top">
+                            <label for="color-purple-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-cream-top" name="color" value="color-cream-top">
+                            <label for="color-cream-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-black-top" name="color" value="color-black-top">
+                            <label for="color-black-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                          <div>
+                            <input type="radio" id="color-white-top" name="color" value="color-white-top">
+                            <label for="color-white-top">
+                              <span>
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div><input type="button" name="previous" class="previous action-button-previous" value="Previous" /><input type="button" name="next" class="next cart-button" data-toggle="modal" data-target="#frequentitems"  value="Add to Cart" /> <input type="button" name="make_payment" class="next action-button" value="Next Step" />
+            </fieldset>
 
                   <fieldset>
                     <div class="message">
@@ -583,30 +589,22 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <input type="button" name="previous" class="previous action-button-previous" value="&laquo; Back" />
-                  <input type="button" name="next" class="next cart-button" data-toggle="modal" data-target="#frequentitems" value="Add to Cart" />
-                  <input type="button" name="make_payment" class="next action-button" value="Next &raquo;" />
-                  </fieldset>
+                    </div><input type="button" name="previous" class="previous action-button-previous" value="Previous" /><input type="button" name="next" class="next cart-button" data-toggle="modal" data-target="#frequentitems" value="Add to Cart" /> <input type="button" name="next" class="next action-button" value="Next Step" />
+                </fieldset>
 
                 <fieldset>
                   <div class="notes">
                     <h2>Add a Note for the Bakery</h2>
                     <form>
                       <div class="form-group">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Nut allergy, fruit allergy, etc."></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                       </div>
                     </form>
-                  </div>
-                  <input type="button" name="previous" class="previous action-button-previous" value="&laquo; Back" />
-                  <input type="button" name="next" class="next cart-button" data-toggle="modal" data-target="#frequentitems" value="Add to Cart" />
-                  <input type="button" name="make_payment" class="next action-button" value="Next &raquo;" data-target="#frequentitems"/>
-                  </fieldset>
-            </section>
-      </form>
-
-<!-- Modal -->
-
+                  </div><input type="button" name="previous" class="previous action-button-previous" value="Previous" /> <input type="button" name="next" class="next cart-button"  data-toggle="modal" data-target="#frequentitems" value="Add to Cart" /><input type="button" name="next" class="next action-button" data-toggle="modal" data-target="#frequentitems" value="Next Step" />
+                </fieldset>
+        </form>
+  </div>      
+</div>      
         <div class="modal fade" id="frequentitems" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog">
               <div class="modal-content">
@@ -616,6 +614,7 @@
                   <span aria-hidden="true">&times;</span>
                   </button>
               </div>
+
               <div class="modal-body">
                 <div class="form-card">
                   <h4>Check out these Frequently Purchased items!</h4> <br><br>
@@ -658,14 +657,15 @@
           </div>
           </div>
           </div>
-    </div>
-    </div>
-    </div>
-</div>
-</div>
-</section>
+
+                </div>
+          </div>
+        </div>
+        </div>
+      </div>
 
 <!-- This is the footer navigation  -->
+
 <footer>
   <div class="outernav">
     <nav class="navbar navbar-expand-lg navbar-light customFooter">
@@ -795,7 +795,14 @@
 
 </footer>
 
+<!-- Javascript -->
 <script src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
 <script src="js/customize.js"></script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

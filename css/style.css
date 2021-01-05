@@ -60,6 +60,38 @@ div.outernav {
     color: white !important;
 }
 
+/* search bar and interaction */
+
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+    background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+    background-color: #2C698B;
+    color: white;
+}
 
 /* footer navigation */
 
@@ -81,6 +113,7 @@ footer {
 
 div.greyfooter {
     margin-top: 3%;
+    background-color: #424046;
 }
 
 footer ul {
@@ -400,6 +433,7 @@ div.scrollmenu li {
     background-color: white;
     border-radius: 10px;
     justify-content: center;
+    box-shadow: 3px 3px 3px lightgrey;
 }
 
 img.pickacake {
@@ -527,6 +561,18 @@ div.productsummary {
     font-size: 16px;
 }
 
+button#closemodal {
+    border: none;
+    box-shadow: none !important;
+    color: black !important;
+    padding: 10px;
+    width: 20px !important;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 3%;
+}
+
 .guest {
     text-align: center;
 }
@@ -587,8 +633,9 @@ div.productsummary {
     font-weight: bold;
     width: 30%;
     float: left;
-    position: relative
+    position: relative;
 }
+
 #progressbar #checkoutpickup:before {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
@@ -610,9 +657,10 @@ div.productsummary {
     height: 50px;
     line-height: 45px;
     display: block;
-    font-size: 18px;
-    color: #FFFFFF;
-    background: lightgray;
+    font-size: 20px;
+    color: white;
+    background: lightgrey;
+    border: solid #CB3D32;
     border-radius: 50%;
     margin: 0 auto 10px auto;
     padding: 2px
@@ -621,9 +669,10 @@ div.productsummary {
     content: '';
     width: 100%;
     height: 2px;
-    background: lightgray;
+    background:#CB3D32;
     position: absolute;
-    left: 0;
+    color: white;
+    left: 50%;
     top: 25px;
     z-index: -1
 }
@@ -726,6 +775,19 @@ button#applypromo {
 }
 
 #dismissconfirmation {
+    background-color: #2C698B;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    box-shadow: 3px 3px 3px lightgrey;
+    padding: 10px;
+    width: 225px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#gotocart {
     background-color: #CB3D32;
     border: none;
     border-radius: 25px;

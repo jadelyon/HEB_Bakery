@@ -16,34 +16,36 @@
 <!-- Navigation bar -->
 
 <div class="outernav">
-    <nav class="navbar navbar-expand-lg navbar-light customNav">
-      <a class="navbar-brand" href="index.html"><img src="images/heblogo.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="form-inline active-cyan-4">
-                <input class="form-control form-control-sm mr-3 w-200" type="text" placeholder="Search"
-                  aria-label="Search">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-            </form>
-          <ul id='nav-list' class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Bakery Home <span class="sr-only">(current)</span></a>
-              </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="account.html">Login or Register <span class="sr-only">(current)</span></a>
+  <nav class="navbar navbar-expand-lg navbar-light customNav">
+    <a class="navbar-brand" href="index.html"><img src="images/heblogo.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline active-cyan-4" autocomplete="off" action="/action_page.php">
+            <div class="autocomplete">
+              <input class="form-control form-control-sm mr-3 w-200" id="searchinput" type="text" name="searchautofill" placeholder="Search"
+                aria-label="Search">
+            </div>
+               <a href="product2.html"><i class="fa fa-search" aria-hidden="true"></i></a>
+          </form>
+        <ul id='nav-list' class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="index.html">Bakery Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Find a Store</a>
-              </li>
-            <li class="cartimg">
-            <a href="cart.html"><img src="images/hebcart.png"></a>
+          <li class="nav-item active">
+            <a class="nav-link" href="account.html">Login or Register <span class="sr-only">(current)</span></a>
           </li>
-          </ul>
-        </div>
-      </nav>
-  </div>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Find a Store</a>
+            </li>
+          <li class="cartimg">
+          <a href="cart.html"><img src="images/hebcart.png"></a>
+        </li>
+        </ul>
+      </div>
+    </nav>
+</div>
 
 <!-- Breadcrumb navigation -->
 
@@ -85,8 +87,58 @@
 
             <div class="col-sm-4 productsummary">
                 <h4>$3.49 each</h4><br>
-                <a href="cart.html"><button id="productaddtocart">Add to Cart</button></a>
-                <a href="#"><button id="productaddtolist">Add to List</button></a>
+                <button type="button" class="btn btn-primary" id="productaddtocart" data-toggle="modal" data-target="#addedtocart">Add to Cart</button>
+                    
+                  <!-- Added to cart success modal -->
+
+                    <div class="modal fade" id="addedtocart" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                          <div class="modal-header">
+                              <h4></h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closemodal">
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              <h5>Success!</h5>
+                              <p>Item has been added to your cart.</p>
+                          </div>
+                          <div class="modal-footer">
+                              <a href="product.html"><button type="button" class="btn btn-secondary" id="dismissconfirmation">Continue Shopping</button></a>
+                              <a href="cart.html"><button type="button" class="btn btn-secondary" id="gotocart">Go to Cart</button></a>
+                          </div>
+                          </div>
+                      </div>
+                    </div>
+                  <!-- end modal -->
+                        
+                <button type="button" class="btn btn-primary" id="productaddtolist" data-toggle="modal" data-target="#addedtolist">Add to List</button>
+
+                  <!-- Added to cart success modal -->
+
+                  <div class="modal fade" id="addedtolist" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h4></h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closemodal">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Success!</h5>
+                            <p>Item has been added to your favorite's list.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="product.html"><button type="button" class="btn btn-secondary" id="dismissconfirmation">Continue Shopping</button></a>
+                            <a href="cart.html"><button type="button" class="btn btn-secondary" id="gotocart">Go to Cart</button></a>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                <!-- end modal -->
+
                 <br><br>
                 <p>Get it in store with the <br>
                     <strong>party supplies</strong>
@@ -94,11 +146,11 @@
                 <hr class="productline"><br>
                 <a href="#">View Nearby Stores</a><br>
                 <a href="#">Write a Review</a>
+
             </div>
 
         </div>
     </div>
-
 
 </section>
 
@@ -233,6 +285,11 @@
   
   </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+<script src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script src="js/index.js"></script>
 
 </body>
 
