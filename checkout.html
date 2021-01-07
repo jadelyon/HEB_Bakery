@@ -118,9 +118,57 @@
             <div class="col">
               <p><strong>Birthday Cake - Coco Theme</strong>
               <p><i>Customized</i><br>
-              <a href="#">View Details</a><br></p>
+              <a href="#" id="viewdetails" data-toggle="modal" data-target="#viewcakedetails">View Details</a><br></p>
               <!-- add qty radio here -->
               <strong>$28.46</strong>
+
+                <!-- view cake details modal -->
+
+                <div class="modal fade" id="viewcakedetails" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                      <div class="modal-header">
+                          <h4>View Details</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closemodal">
+                          <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                          <h5>Customized Coco Cake</h5>
+                          <div class="notes">
+                            <p><b>Shape:</b> Round</p>
+                            <p><b>Size:</b> 48 Servings - 12 inches</p>
+                            <p><b>Flavor:</b> Birthday</p>
+                            <p><b>Icing:</b> <ul>
+                              <li>Base: <ul class="icingreview">
+                                <li>Light</li>
+                                <li>Color: <span class="purple-dot"></span></li>
+                                </ul>
+                              </li>
+                              <li>Top Border: <ul class="icingreview">
+                                <li>Shells</li>
+                                <li>Color: <span class="purple-dot"></span></li>
+                                </ul>
+                              </li>
+                              <li>Bottom Border: <ul class="icingreview">
+                                <li>Shells</li>
+                                <li>Color: <span class="purple-dot"></span></li>
+                                </ul>
+                              </li>
+                            </ul></p>
+                            <p><b>Message:</b> Happy Birthday Joey!!!</p>
+                            <p><b>Notes:</b> Please avoid almonds as the birthday boy is allergic to them</p>
+                          </div>
+                      </div>
+                      <div class="modal-footer">
+                          <a href="index.html"><button type="button" class="btn btn-secondary" id="dismissconfirmation">Continue Shopping</button></a>
+                          <a href="checkout.html"><button type="button" class="btn btn-secondary" id="gotocart">Go Back to Checkout</button></a>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+              <!-- end modal -->
+
             </div>
           </div>
         </div>
@@ -237,7 +285,7 @@
           <br><br>
           
           <div class="submitbuttons">
-            <a href="payment.html"><button type="submit">Continue to Payment</button></a>
+            <a href="paymenterror.html"><button type="submit">Continue to Payment</button></a>
           </div>
         </div>
             
@@ -388,6 +436,7 @@
 </body>
 
 <script src="js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
