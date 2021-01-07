@@ -658,12 +658,11 @@ button#closemodal {
     line-height: 45px;
     display: block;
     font-size: 20px;
-    color: white;
-    background: lightgrey;
+    color: black;
+    background: white;
     border: solid #CB3D32;
     border-radius: 50%;
     margin: 0 auto 10px auto;
-    padding: 2px
 }
 #progressbar li:after {
     content: '';
@@ -671,14 +670,13 @@ button#closemodal {
     height: 2px;
     background:#CB3D32;
     position: absolute;
-    color: white;
-    left: 50%;
     top: 25px;
-    z-index: -1
+    left:81.5%
 }
 #progressbar li.active:before,
 #progressbar li.active:after {
     background: #CB3D32;
+    color: white;
 }
 
 

@@ -1,0 +1,743 @@
+/* header navigation */
+
+p { 
+    font-family: 'Jura', sans-serif;
+  }
+  .customNav {
+    position: fixed;
+    width: 100%;
+    background-size: cover;
+    z-index: 10;
+  }
+  .navbar-nav{
+    margin-left: auto;
+  }
+  .navbar-brand img{
+    padding-right: 15px;
+    width: 65px;
+  }
+  .nav-item{
+    margin: 0px 15px;
+  }
+  .customNav a {
+      color: black!important;
+    }
+    .active-cyan-2 input[type=text]:focus:not([readonly]) {
+        border-bottom: 1px solid #2C698B;
+        box-shadow: 0 1px 0 0 #2C698B;
+        margin-left: auto;
+      }
+    .active-cyan .fa, .active-cyan-2 .fa {
+        color: #2C698B;
+      }
+      #nav-list{
+        margin-right: 0 !important;
+      }
+    .form-inline{
+      margin-right: 0!important;
+      margin-left: auto;
+   }
+
+
+/* radio buttons */
+
+[type="radio"] {
+    border: 0; 
+    clip: rect(0 0 0 0); 
+    height: 1px; margin: -1px; 
+    overflow: hidden; 
+    padding: 0; 
+    position: absolute; 
+    width: 1px;
+  }
+  /* One radio button per line */
+  label {
+    display: block;
+    cursor: pointer;
+    line-height: 2.5;
+    font-size: 1.5em;
+    margin-left: 0 !important;
+  }
+  [type="radio"] + span {
+    display: block;
+  }
+  /* the basic, unchecked style */
+  [type="radio"] + span:before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.25em;
+    border-radius: 1em;
+    border: 0.125em solid #fff;
+    box-shadow: 0 0 0 0.15em #000;
+    margin-right: 0.75em;
+    transition: 0.5s ease all;
+  }
+  /* the checked style using the :checked pseudo class */
+  [type="radio"]:checked + span:before {
+    background: #2C698B;
+    box-shadow: 0 0 0 0.25em #2C698B;
+}
+  /* never forget focus styling */
+  [type="radio"]:focus + span:after {
+    font-size: 1.5em;
+    line-height: 1;
+    vertical-align: -0.125em;
+  }
+  fieldset {
+  font-size: 1em;
+  border: 2px solid #2C698B;
+  padding: 2em;
+  border-radius: 0.5em;
+}
+fieldset label{
+    justify-content: left !important;
+}
+
+/* rightcustomization */
+
+   /* Stepper */
+
+.pt-2{
+    margin: 10%;
+}
+
+ul{
+    padding: 0 auto !important;
+}
+#grad1 {
+    background-color: #9C27B0;
+    background-image: linear-gradient(120deg, #FF4081, #81D4FA)
+}
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 10px
+}
+#msform fieldset{
+    text-align: left !important;
+}
+#msform fieldset .form-card {
+    background: #F8F8F8;
+    border: 2px solid;
+    border-radius: 0px;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    padding: 20px 40px 30px 40px;
+    box-sizing: border-box;
+    width: 94%;
+    margin: 0 3% 20px 3%;
+    position: relative
+}
+#msform fieldset {
+    background: #F8F8F8;
+    border:0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+#msform fieldset .form-card {
+    text-align: left;
+    color: #9E9E9E;
+    box-shadow: none !important;
+}
+#msform input,
+#msform textarea {
+    padding: 0px 8px 4px 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 16px;
+    letter-spacing: 1px
+}
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none;
+    font-weight: bold;
+    border-bottom: 2px solid #2C698B;
+    outline-width: 0
+}
+#msform .action-button {
+    width: 100px;
+    background: #2C698B;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px
+}
+#msform .action-button:hover,
+#msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #2C698B;
+}
+
+#msform .cart-button:hover,
+#msform .cart-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #CB3D32;
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px
+}
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #616161
+}
+select.list-dt {
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 2px 5px 3px 5px;
+    margin: 2px
+}
+select.list-dt:focus {
+    border-bottom: 2px solid #2C698B
+}
+.card {
+    z-index: 0;
+    border: none;
+    border-radius: 0.5rem;
+    position: relative
+}
+.fs-title {
+    font-size: 25px;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left
+}
+#progressbar {
+    overflow: hidden;
+    color: lightgrey
+}
+#progressbar .active {
+    color: #000000
+}
+#progressbar li {
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: bold;
+    width: 13%;
+    float: left;
+    position: relative
+}
+#progressbar #cakeshape:before {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    content: "1"
+}
+#progressbar #cakesize:before {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    content: "2"
+}
+#progressbar #cakeflavor:before {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    content: "3"
+}
+#progressbar #cakeicing:before {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    content: "4"
+}
+#progressbar #cakemessage:before {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    content: "5"
+}
+#progressbar #cakenotes:before {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    content: "6"
+}
+#progressbar #review:before {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    content: "7"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: black;
+    background:white;
+    border: solid #2C698B;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+
+}
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background:#2C698B;
+    position: absolute;
+    top: 25px;
+    z-index: -1;
+    left: 50%;
+}
+
+#progressbar li:last-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background:#2C698B;
+    color: white;
+}
+.radio-group {
+    position: relative;
+    margin-bottom: 25px
+}
+.radio {
+    display: inline-block;
+    width: 204;
+    height: 104;
+    border-radius: 0;
+    background: lightblue;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 8px 2px
+}
+.radio:hover {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3)
+}
+.radio.selected {
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1)
+}
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+#msform .cart-button {
+    width: 150px;
+    background:#CB3D32;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 15px 5px;
+}
+#msform .back-to-home {
+    width: 150px;
+    background: #CB3D32;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px
+}
+
+.next{
+    border-radius: 35px !important;
+}
+
+    .previous{
+    border-radius: 35px !important;
+}
+
+.cakeshape{
+    border: 0 none;
+    border-radius: 20px;
+    padding: 7%;
+    width: 130%;
+    background-color: white;
+    box-shadow: 0px 0px 7px 6px rgba(0, 0, 0, 0.25);
+    margin-left: 13px;
+    font-size: .75em;
+}
+
+.cakesize{
+    border: 0 none;
+    border-radius: 20px;
+    padding: 7%;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 7px 6px rgba(0, 0, 0, 0.25);
+    margin-left: 10px;
+    font-size: .75em;
+}
+
+.flavor{
+    border: 0 none;
+    border-radius: 20px;
+    padding: 7%;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 7px 6px rgba(0, 0, 0, 0.25);
+    margin-left: 10px;
+    font-size: .75em;
+}
+
+.rightflavors{
+    margin-left: 15px;
+}
+.leftflavors{
+    margin-left: 15px;
+}
+.icing{
+    border: 0 none;
+    border-radius: 20px;
+    padding: 7%;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 7px 6px rgba(0, 0, 0, 0.25);
+    margin-left: 10px;
+}
+
+#icingbase{
+    font-size: .75em;
+}
+
+#icingtop{
+    font-size: .75em;
+}
+#icingbottom{
+    font-size: .75em;
+}
+
+label{
+    padding-right: 20px;
+}
+ 
+.message{
+    border: 0 none;
+    border-radius: 20px;
+    padding: 7%;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 7px 6px rgba(0, 0, 0, 0.25);
+    margin-left: 10px;
+    font-size: .75em;
+}
+
+.notes{
+    border: 0 none;
+    border-radius: 20px;
+    padding: 7%;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 7px 6px rgba(0, 0, 0, 0.25);
+    margin-left: 10px;
+}
+/* modal */
+
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 950px !important;
+    margin: 1.75rem auto;
+}
+
+.modal-header{
+    border-bottom: none !important;
+    background-color: white !important;
+    border-top-left-radius: 1.5rem !important;
+    border-top-right-radius: 1.5rem !important;
+}
+
+.modal-content{
+    border-radius: 1.5rem !important;
+    filter:drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.25));
+    border: none;
+}
+.modal{
+    margin-top: 50px !important;
+}
+
+.modal-footer{
+    border-top: none !important;
+    margin-bottom: 0 !important;
+}
+
+.add-item{
+    border: black solid;
+    padding: 2%;
+    margin: 10px;
+}
+.add-to-cart{
+    background-color:#CB3D32 ;
+    border-radius: 5em;
+    border: none;
+    color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 1%;
+    font-size: 16px;
+}
+
+.skip{
+    background-color: white;
+    text-decoration: underline;
+    font-size: 13px;
+    border: none;
+}
+
+
+/* Breadcrumb navigation */
+ul.breadcrumb li {
+    display: inline;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: grey;
+    content: "/\00a0"
+}
+ul.breadcrumb {
+    background-color: #f8f8f8;
+}
+
+.containerGrid{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    background-color: #F8F8F8;
+}
+
+/* color options base */
+.custom-radio-button div {
+    display: inline-block;
+  }
+  .custom-radio-button input[type="radio"] {
+    display: none;
+  }
+  .custom-radio-button input[type="radio"] + label {
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  .custom-radio-button input[type="radio"] + label span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    line-height: 44px;
+  }
+  .custom-radio-button input[type="radio"] + label span img {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .custom-radio-button input[type="radio"]#color-pink + label span {
+    background-color: #FF00E5;
+  }
+  .custom-radio-button input[type="radio"]#color-red + label span {
+    background-color: red;
+  }
+  .custom-radio-button input[type="radio"]#color-orange + label span {
+    background-color: #FF6B00;
+  }
+  .custom-radio-button input[type="radio"]#color-yellow + label span {
+    background-color: yellow;
+  }
+  .custom-radio-button input[type="radio"]#color-green + label span {
+    background-color: #7BA682;
+  }
+  .custom-radio-button input[type="radio"]#color-lightBlue + label span {
+    background-color: #5EF5FF;
+  }
+  .custom-radio-button input[type="radio"]#color-blue + label span {
+    background-color: blue;
+  }
+  .custom-radio-button input[type="radio"]#color-purple + label span {
+    background-color: #A952FF;
+  }
+  .custom-radio-button input[type="radio"]#color-cream + label span {
+    background-color: #FFDEB7;
+  }
+  .custom-radio-button input[type="radio"]#color-white + label span {
+    background-color: white;
+  }
+  .custom-radio-button input[type="radio"]#color-black + label span {
+    background-color: black;
+  }
+  .custom-radio-button input[type="radio"]:checked + label span {
+    opacity: 1;
+    background: url("https://www.positronx.io/wp-content/uploads/2019/06/tick-icon-4657-01.png")
+      center center no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    padding
+  }
+
+  /* color options top border */
+.icingtop-buttons div {
+    display: inline-block;
+  }
+  .icingtop-buttons input[type="radio"] {
+    display: none;
+  }
+  .icingtop-buttons input[type="radio"] + label {
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  .icingtop-buttons input[type="radio"] + label span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    line-height: 44px;
+  }
+  .icingtop-buttons input[type="radio"] + label span img {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .icingtop-buttons input[type="radio"]#color-pink-top + label span {
+    background-color: #FF00E5;
+  }
+  .icingtop-buttons input[type="radio"]#color-red-top + label span {
+    background-color: red;
+  }
+  .icingtop-buttons input[type="radio"]#color-orange-top + label span {
+    background-color: #FF6B00;
+  }
+  .icingtop-buttons input[type="radio"]#color-yellow-top + label span {
+    background-color: yellow;
+  }
+  .icingtop-buttons input[type="radio"]#color-green-top + label span {
+    background-color: #7BA682;
+  }
+  .icingtop-buttons input[type="radio"]#color-lightBlue-top + label span {
+    background-color: #5EF5FF;
+  }
+  .icingtop-buttons input[type="radio"]#color-blue-top + label span {
+    background-color: blue;
+  }
+  .icingtop-buttons input[type="radio"]#color-purple-top + label span {
+    background-color: #A952FF;
+  }
+  .icingtop-buttons input[type="radio"]#color-cream-top + label span {
+    background-color: #FFDEB7;
+  }
+  .icingtop-buttons input[type="radio"]#color-white-top + label span {
+    background-color: white;
+  }
+  .icingtop-buttons input[type="radio"]#color-black-top + label span {
+    background-color: black;
+  }
+  .icingtop-buttons input[type="radio"]:checked + label span {
+    opacity: 1;
+    background: url("https://www.positronx.io/wp-content/uploads/2019/06/tick-icon-4657-01.png")
+      center center no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    padding
+  }
+
+  /* color options message */
+.message-buttons div {
+    display: inline-block;
+  }
+  .message-buttons input[type="radio"] {
+    display: none;
+  }
+  .message-buttons input[type="radio"] + label {
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  .message-buttons input[type="radio"] + label span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    line-height: 44px;
+  }
+  .message-buttons input[type="radio"] + label span img {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .message-buttons input[type="radio"]#color-pink-bottom + label span {
+    background-color: #FF00E5;
+  }
+  .message-buttons input[type="radio"]#color-red-bottom + label span {
+    background-color: red;
+  }
+  .message-buttons input[type="radio"]#color-orange-bottom + label span {
+    background-color: #FF6B00;
+  }
+  .message-buttons input[type="radio"]#color-yellow-bottom + label span {
+    background-color: yellow;
+  }
+  .message-buttons input[type="radio"]#color-green-bottom + label span {
+    background-color: #7BA682;
+  }
+  .message-buttons input[type="radio"]#color-lightBlue-bottom + label span {
+    background-color: #5EF5FF;
+  }
+  .message-buttons input[type="radio"]#color-blue-bottom + label span {
+    background-color: blue;
+  }
+  .message-buttons input[type="radio"]#color-purple-bottom + label span {
+    background-color: #A952FF;
+  }
+  .message-buttons input[type="radio"]#color-cream-bottom + label span {
+    background-color: #FFDEB7;
+  }
+  .message-buttons input[type="radio"]#color-white-bottom + label span {
+    background-color: white;
+  }
+  .message-buttons input[type="radio"]#color-black-bottom + label span {
+    background-color: black;
+  }
+  .message-buttons input[type="radio"]:checked + label span {
+    opacity: 1;
+    background: url("https://www.positronx.io/wp-content/uploads/2019/06/tick-icon-4657-01.png")
+      center center no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    padding
+  }
