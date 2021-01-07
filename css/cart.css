@@ -398,6 +398,16 @@ button#closemodal {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
   }
   
+  .white-dot{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    }
+
   .icingreview{
   list-style-type: none;
   }
